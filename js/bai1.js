@@ -8,6 +8,6 @@ function findDate() {
     var prevDate = new Date(selectDate);
     prevDate.setDate(selectDate.getDate() - 1);
 
-    document.getElementById("nextDate").value = nextDate; 
-    document.getElementById("prevDate").value = prevDate;
+    document.getElementById("nextDate").value = nextDate.toLocaleDateString('vi-VN'); 
+    document.getElementById("prevDate").value = prevDate.toLocaleDateString('vi-VN');
 }
